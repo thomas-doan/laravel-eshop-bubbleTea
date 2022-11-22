@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    overflow-x: auto;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px;
+}
+
+h2 {
+
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+.table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+}
+
+.table th:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.table td {
+    border: 1px solid #ddd;
+}
+
+.table td:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.table td:not(:first-child) {
+    text-align: center;
+}
+
+.table form input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+/* Add responsive to container*/
+
+@media screen and (max-width: 1200px) {
+    .container {}
+}

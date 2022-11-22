@@ -1,0 +1,64 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.dashboardFi {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 0.5rem;
+    height: 100%;
+}
+
+article {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formCommande {
+
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-top: .0313rem solid black;
+    height: 30%;
+}
+
+.formCommande>* {
+    margin: 0.5rem;
+}

@@ -1,0 +1,7 @@
+/login
+/register
+/dashboard
+/commande
+/commande/boisson
+/profil
+/admin

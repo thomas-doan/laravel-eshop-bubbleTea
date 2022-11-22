@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 25px;
+    font-weight: 300;
+    color: #006170;
+}
+
+.formRegister {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.formRegister input {
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.formRegister input:hover {
+    border: 1px solid orangered;
+}
+
+.formRegister label {
+    width: 400px;
+    justify-content: flex-start;
+}
+
+.formRegister button {
+    width: 400px;
+    height: 40px;
+    margin: 25px auto 5px auto;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #2D9216;
+    color: white;
+}
+
+.formRegister button:hover {
+    background-color: #247712;
+    border: 1px solid #247712;
+}
+
+.line {
+    width: 400px;
+    height: 2px;
+    background: #ccc;
+    margin: 50px auto;
+    position: relative;
+}
+
+.line span {
+    /* draw a carre with text inside */
+    width: 35px;
+    height: 35px;
+    position: absolute;
+
+    /* put text in the middle of the carre with absolute*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: whitesmoke;
+    border: 1px solid #ccc;
+
+    /* put text in the middle of the carre with flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+.URLlogin {
+    text-align: center;
+    margin: 10px 0 25px 0;
+    font-weight: 300;
+    display: flex;
+}
+
+.errordisplay {
+    width: 400px;
+    color: red;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    list-style-type: none;
+    /* put the text in column */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

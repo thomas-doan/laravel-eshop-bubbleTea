@@ -1,0 +1,123 @@
+       @import url(https://fonts.googleapis.com/css2?family=Caveat&display=swap);
+       @import url(https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap);
+       @import url(https://fonts.googleapis.com/css2?family=Varela+Round&display=swap);
+
+       * {
+           margin: 0;
+           padding: 0;
+           font-family: 'Noto', sans-serif;
+       }
+
+       main {
+           display: flex;
+           flex-direction: column;
+           justify-items: center;
+           flex: 1 0 auto;
+           width: 100%;
+       }
+
+
+       span {
+           color: black;
+       }
+
+
+       body {
+           display: flex;
+           flex-direction: column;
+           flex: 1 0 auto;
+           min-height: 100vh;
+           width: 100vw;
+       }
+
+
+       nav {
+           background-color: rgb(235, 235, 235);
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           color: white;
+           padding: 2rem;
+       }
+
+       nav a {
+           text-decoration: none;
+           color: white;
+       }
+
+       #logo_name {
+           font-weight: bold;
+           color: orange
+       }
+
+       .Navigation {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           gap: 6rem;
+       }
+
+       .Navigation li {
+           list-style: none;
+           transition: 0.7s ease;
+       }
+
+       .Navigation li:hover {
+           color: orange;
+       }
+
+       .hamburger {
+           display: none;
+           margin: 0.5rem;
+       }
+
+       .hamburger span {
+           display: block;
+           width: 25px;
+           height: 3px;
+           margin: 5px auto;
+           background-color: whitesmoke;
+       }
+
+       @media (max-width: 768px) {
+           nav {
+               justify-content: space-between;
+           }
+
+           .hamburger {
+               display: block;
+           }
+
+           .hamburger.active span:nth-child(2) {
+               opacity: 0;
+               transition: ease 0.7s;
+           }
+
+           .hamburger.active span:nth-child(1) {
+               transform: translateY(8px) rotate(45deg);
+               transition: ease 0.7s;
+           }
+
+           .hamburger.active span:nth-child(3) {
+               transform: translateY(-8px) rotate(-45deg);
+               transition: ease 0.7s;
+           }
+
+           .Navigation {
+               position: fixed;
+               left: -100%;
+               top: 70px;
+               gap: 1rem;
+               flex-direction: column;
+               background-color: rgb(237, 131, 26);
+               width: 100%;
+               height: 30vh;
+               text-align: center;
+               transition: 0.3s;
+               z-index: 1000;
+           }
+
+           .Navigation.active {
+               left: 0;
+           }
+       }

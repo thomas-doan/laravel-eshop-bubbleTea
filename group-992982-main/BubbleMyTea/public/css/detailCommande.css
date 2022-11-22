@@ -1,0 +1,53 @@
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F3EA;
+    color: white;
+}
+
+span {
+    color: orange;
+}
+
+article {
+    background-color: #F6DDC5;
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    transition: 2s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: maroon;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+    transform: scale(1.02);
+}
+
+h1,
+p {
+    padding: 0.5rem;
+}
+
+.delimiter {
+
+
+
+    padding: 1rem;
+
+
+    border-top: .0313rem solid black;
+
+
+}
